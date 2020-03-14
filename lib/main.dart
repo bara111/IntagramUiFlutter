@@ -81,9 +81,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Column(
                   children: <Widget>[
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.only(top:8.0,bottom: 8.0,left: 30.0,right: 30.0),
                       child: Container(
-                        width: 300.0,
+                        width: double.infinity,
                         color: Colors.black12,
                         child: TextField(
                           decoration: InputDecoration(
@@ -96,10 +96,10 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(
-                          left: 8.0, top: 2.0, right: 8.0, bottom: 8.0),
+                      padding: const EdgeInsets.only(top:8.0,bottom: 8.0,left: 30.0,right: 30.0),
+
                       child: Container(
-                        width: 300.0,
+                        width: double.infinity,
                         color: Colors.black12,
                         child: TextField(
                           decoration: InputDecoration(
@@ -111,19 +111,22 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ),
                     ),
-                    new SizedBox(
-                      width: 300.0,
-                      child: new RaisedButton(
-                        color: Colors.blue,
-                        child: Padding(
-                          padding: const EdgeInsets.all(12.0),
-                          child: new Text(
-                            'Log In',
-                            style:
-                                TextStyle(color: Colors.white, fontSize: 15.0),
+                    Padding(
+                      padding: const EdgeInsets.only(top:8.0,bottom: 8.0,left: 30.0,right: 30.0),
+                      child: new SizedBox(
+                        width: double.infinity,
+                        child: new RaisedButton(
+                          color: Colors.blue,
+                          child: Padding(
+                            padding: const EdgeInsets.all(12.0),
+                            child: new Text(
+                              'Log In',
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 15.0),
+                            ),
                           ),
+                          onPressed: () => {},
                         ),
-                        onPressed: () => {},
                       ),
                     ),
                     Row(
@@ -136,22 +139,25 @@ class _MyHomePageState extends State<MyHomePage> {
                             // optional, in order to add additional space around text if needed
                             child: Text(
                               'Get help signing in',
-                            ))
+                            ), onPressed: () {},)
                       ],
                     ),
-                    new SizedBox(
-                      width: 300.0,
-                      child: new RaisedButton(
-                        color: Colors.lightBlue,
-                        child: Padding(
-                          padding: const EdgeInsets.all(12.0),
-                          child: new Text(
-                            'Log in as @bara_amarneh',
-                            style:
-                                TextStyle(color: Colors.white, fontSize: 15.0),
+                    Padding(
+                      padding: const EdgeInsets.only(top:8.0,bottom: 8.0,left: 30.0,right: 30.0),
+                      child: new SizedBox(
+                        width: double.infinity,
+                        child: new RaisedButton(
+                          color: Colors.lightBlue,
+                          child: Padding(
+                            padding: const EdgeInsets.all(12.0),
+                            child: new Text(
+                              'Log in as @bara_amarneh',
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 15.0),
+                            ),
                           ),
+                          onPressed: () => {},
                         ),
-                        onPressed: () => {},
                       ),
                     ),
                     Padding(
